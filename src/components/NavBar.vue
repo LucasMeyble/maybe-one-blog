@@ -32,7 +32,7 @@
 }
 
 .options{
-
+  font-size: 18;
 }
 
 
