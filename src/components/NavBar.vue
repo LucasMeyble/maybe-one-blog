@@ -11,9 +11,10 @@
       <router-link class="title" to="/">Maybe One Blog</router-link>
     </div>
 
-    <div class="options">
-      <router-link to="/">Inicio</router-link> |
-      <router-link to="/about">Sobre</router-link>
+    <div class="social-networks">
+      <a href="https://github.com/LucasMeyble" target="_blank"><font-awesome-icon :icon="['fab', 'github']"/></a> |
+      <a href="https://www.instagram.com/lucas_meyble/" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']"/></a> |
+      <a href="https://www.linkedin.com/in/lucas-meyble-67b0591bb/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin-in']"/></a>
     </div>
   </div>
 </template>
@@ -31,7 +32,8 @@
 }
 
 .title,
-.options a{
+.options a, 
+.social-networks a{
   font-weight: bold;
   color: #FFF;
   text-decoration: none;
@@ -41,8 +43,9 @@
   font-size: 32px;
 }
 
-.options a {
-  font-size: 16px;
+.social-networks ,
+.social-networks a {
+  font-size: 21px;
 }
 
 
