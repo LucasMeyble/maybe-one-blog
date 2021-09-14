@@ -1,8 +1,16 @@
 <template>
   <div id="nav">
-    <div class="title" >
-      <router-link to="/">Maybe one blog</router-link>
+    
+
+    <div class="options">
+      <router-link to="/">Inicio</router-link> |
+      <router-link to="/about">Sobre</router-link> 
     </div>
+
+    <div class="title-container" >
+      <router-link class="title" to="/">Maybe One Blog</router-link>
+    </div>
+
     <div class="options">
       <router-link to="/">Inicio</router-link> |
       <router-link to="/about">Sobre</router-link>
@@ -13,26 +21,28 @@
 <style scoped>
 
 #nav {
-  padding: 30px;
-  align-items: center;
-  text-align: left;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 60px;
+  align-items: center;
+  background: rgba(26, 23, 23, 0.979);
+  height: 8vh;
 }
 
-#nav a {
+.title,
+.options a{
   font-weight: bold;
-  color: #2c3e50;
+  color: #FFF;
   text-decoration: none;
 }
 
 .title{
-  font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
 }
 
-.options{
-  font-size: 18;
+.options a {
+  font-size: 16px;
 }
 
 
