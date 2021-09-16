@@ -27,8 +27,7 @@ export default {
 }
 
 #app {
-  background-image: linear-gradient(0deg,rgba(255,0,0,0) 20%, rgb(8, 230, 230) 96%);
-  background-color: rgba(10, 9, 9, 0.952);
+  background-color: #131313;
   color: #FFF;
   height: 100vh;
 }

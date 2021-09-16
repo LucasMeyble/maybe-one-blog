@@ -3,8 +3,8 @@
     
 
     <div class="options">
-      <router-link to="/">Inicio</router-link> |
-      <router-link to="/about">Sobre</router-link> 
+      <router-link class="link" to="/">Inicio </router-link> 
+      <router-link class="link" to="/about">Sobre</router-link> 
     </div>
 
     <div class="title-container" >
@@ -27,12 +27,17 @@
   margin: 0 auto;
   padding: 0 60px;
   align-items: center;
-  background: rgba(26, 23, 23, 0.979);
+  background: rgb(0, 0, 0);
   height: 8vh;
+  border-bottom: 0.5px solid rgb(36, 36, 36);
 }
 
-.title,
-.options a, 
+.options a {
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+  font-weight: bold;
+}
+.title, 
 .social-networks a{
   font-weight: bold;
   color: #FFF;
@@ -46,6 +51,10 @@
 .social-networks ,
 .social-networks a {
   font-size: 21px;
+}
+
+a :hover, .options :hover {
+  color: rgb(160, 245, 245)
 }
 
 
