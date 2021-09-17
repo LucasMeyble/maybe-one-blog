@@ -1,7 +1,5 @@
 <template>
   <div id="nav">
-    
-
     <div class="options">
       <router-link class="link" to="/">Inicio </router-link> 
       <router-link class="link" to="/about">Sobre</router-link> 
@@ -10,6 +8,8 @@
     <div class="title-container" >
       <router-link class="title" to="/">Maybe One Blog</router-link>
     </div>
+
+    <button id="btn-mobile">botão</button>
 
     <div class="social-networks">
       <a href="https://github.com/LucasMeyble" target="_blank"><font-awesome-icon :icon="['fab', 'github']"/></a> |
@@ -33,7 +33,7 @@
 }
 
 .options a {
-  color: rgb(63, 63, 63);
+  color: rgb(87, 87, 87);
   text-decoration: none;
   font-weight: bold;
 }
@@ -55,6 +55,65 @@
 
 a :hover, .options :hover {
   color: rgb(160, 245, 245)
+}
+
+#btn-mobile{
+  display: none;
+}
+
+/* ------------------------------------------ */
+/* mobile */
+
+@media (max-width: 720px){
+  #btn-mobile {
+    display: block;
+  }
+
+  /* #nav {
+      border-bottom: p solid rgb(36, 36, 36);
+
+  } */
+
+  .options{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    right: 0px;
+    height: 92vh;
+    padding-left: 60px;
+    background: #000000; 
+    z-index: 1000;
+  }
+
+  #nav.active .options{
+    display: flex;
+  }
+
+  .options a{
+    background-image: linear-gradient(100deg,rgb(24, 24, 24) 20%, rgb(0, 0, 0) 96%);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0.5vh 0; 
+    padding: 2vh 0;
+    padding-left: 3vh;
+  }
+
+  .options :hover{
+    /* background: rgb(15, 15, 15); */
+    background-image: linear-gradient(100deg,rgb(7, 7, 7) 20%, rgb(0, 0, 0) 96%);
+    border-left: 2px solid rgb(160, 245, 245);
+  }
+
+  .title{
+    font-size: 16px;
+  }
+
+  .social-networks{
+    display: none;
+  }
 }
 
 
