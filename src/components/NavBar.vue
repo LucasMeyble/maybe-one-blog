@@ -9,7 +9,7 @@
       <router-link class="title" to="/">Maybe One Blog</router-link>
     </div>
 
-    <button id="btn-mobile">botão</button>
+    <button @click="click" id="btn-mobile"><font-awesome-icon :icon="['fas', 'align-right']"/></button>
 
     <div class="social-networks">
       <a href="https://github.com/LucasMeyble" target="_blank"><font-awesome-icon :icon="['fab', 'github']"/></a> |
@@ -18,6 +18,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'NavBar',
+    data(){
+        return{
+            
+        }
+    },
+    methods: {
+        click(){
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    }
+}
+</script>
 
 <style scoped>
 
@@ -66,7 +83,15 @@ a :hover, .options :hover {
 
 @media (max-width: 720px){
   #btn-mobile {
+    padding: 10px 10px;
     display: block;
+    color: #FFF;
+    background: #000;
+    cursor: pointer;
+  }
+  
+  #btn-mobile :hover{
+    color: rgb(160, 245, 245)
   }
 
   /* #nav {
@@ -75,20 +100,21 @@ a :hover, .options :hover {
   } */
 
   .options{
-    display: none;
     /* display: flex; */
+    display: none;
     flex-direction: column;
     position: absolute;
     width: 100%;
     top: 8vh;
-    right: 0px;
-    height: 92vh;
     padding-left: 60px;
     background: #000000; 
+    right: 0px;
+    height: 0vh;
     z-index: 1000;
   }
 
   #nav.active .options{
+    height: 92vh;
     display: flex;
   }
 
@@ -110,6 +136,7 @@ a :hover, .options :hover {
   .title{
     font-size: 16px;
   }
+
 
   .social-networks{
     display: none;
