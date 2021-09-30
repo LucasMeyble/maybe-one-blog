@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
     <div class="options">
-      <router-link class="link" to="/">Inicio </router-link> 
-      <router-link class="link" to="/about">Sobre</router-link> 
+      <router-link @click="closeMenu" class="link" to="/">Inicio </router-link> 
+      <router-link @click="closeMenu" class="link" to="/about">Sobre</router-link> 
     </div>
 
     <div class="title-container" >
@@ -29,8 +29,12 @@ export default {
     },
     methods: {
         click(){
-            const nav = document.getElementById('nav');
-            nav.classList.toggle('active');
+          const nav = document.getElementById('nav');
+          nav.classList.toggle('active');
+        },
+        closeMenu(){
+          const nav = document.getElementById('nav');
+          nav.classList.remove('active');
         }
     }
 }
