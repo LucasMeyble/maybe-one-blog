@@ -1,1 +1,336 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/maybe-one-blog/favicon.ico"><title>Maybe One Blog</title><link href="/maybe-one-blog/css/about.25f78c4f.css" rel="prefetch"><link href="/maybe-one-blog/js/about.159203ce.js" rel="prefetch"><link href="/maybe-one-blog/css/app.b2664472.css" rel="preload" as="style"><link href="/maybe-one-blog/js/app.64040b29.js" rel="preload" as="script"><link href="/maybe-one-blog/js/chunk-vendors.6d010233.js" rel="preload" as="script"><link href="/maybe-one-blog/css/app.b2664472.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but Maybe One Blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/maybe-one-blog/js/chunk-vendors.6d010233.js"></script><script src="/maybe-one-blog/js/app.64040b29.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maybe One Blog</title>
+  <link rel="shortcut icon" type="image/jpg" href="./assets/img/icons_habilidades/logo-removebg-preview.png"/>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__item"><a href="#bannerContainer" class="lista-menu__link">Sobre</a></li>
+        <li class="lista-menu__item"><a href="#trabalhos" class="lista-menu__link">Trabalhos</a></li>
+        <li class="lista-menu__item"><a href="#habilidades" class="lista-menu__link">Habilidade</a></li>
+        <li class="lista-menu__item"><a href="./assets/curriculo.pdf" download="curriculo_lucas_meyble" class="lista-menu__link">Baixar CV</a></li>
+      </ul>
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Maybe-one-</b>Blog</h1>
+    </div>
+    <ul class="opcoes">
+      <li class="opcoes__item button-cv"><a href="#bannerContainer" class="opcoes__link">Sobre</a></li>
+      <li class="opcoes__item button-cv"><a href="#trabalhos" class="opcoes__link">Trabalhos</a></li>
+      <li class="opcoes__item button-cv"><a href="#habilidades" class="opcoes__link">Habilidade</a></li>
+      <li class="opcoes__item button-cv"><a href="./assets/curriculo.pdf" download="curriculo_lucas_meyble" class="opcoes__link">Baixar CV</a></li>
+    </ul>
+  </header>
+
+  <section class="banner" id="bannerContainer">
+    <div class="title">
+      <p class="title-text">Sobre</p>
+    </div>
+    <div class="foto-perfil-container">
+      <img src="./assets/img/IMG_7352.JPG" alt="foto de Lucas Meyble" class="img">
+    </div>
+    <div class="apresentacao-container">
+      <p class="margin-text">Olá, me chamo Lucas Meyble e sou um apaixonado pela tecnologia kk.</p>
+      <p class="margin-text">Formado em Análise de sistemas pela UniFavip, iniciei minha carreira como desenvolvedor 2020, quando iniciei um estágio na área de programação e tive a oportunidade de entrar de frente nesse mundo.</p>
+      <p class="margin-text">Tenho trabalhado como desenvolvedor fullstack desde então, basicamente utilizando as linguagens PHP(Laravel e CodIgniter), Node, React, React Native e VUE. Nestes 4 anos trabalhando com desenvolvimento fullstack tive a oportunidade de trabalhar com diversas tecnologias: Docker, MySQL, PostgreSQL, Bullmq, Redis, Tailwind CSS.</p>
+    </div>
+  </section>
+
+  <section class="carrossel" id="trabalhos">
+    <h2 class="carrossel__titulo">Trabalhos</h2>
+    <div class="carrossel__container">
+
+      <div class="swiper">
+        <!-- If we need pagination -->
+  
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <button onclick="teste(0)" type="button">
+              <img src="./assets/img/labclin.png" alt="Livro sobre apachekafka e spring boot da alura books">
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button onclick="teste(1)" type="button">
+              <img src="./assets/img/Prosmed.png" alt="Livro sobre Acessibilidade da alura books">
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button onclick="teste(2)" type="button">
+              <img src="./assets/img/xcor.png" alt="Livro sobre Javascript da alura books">
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button onclick="teste(3)" type="button">
+              <img src="./assets/img/bable_pet.png" alt="Livro sobre full stack Javascript para web">
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button onclick="teste(4)" type="button">
+              <img src="./assets/img/spp.png" alt="Livro sobre logica de programação com portugol">
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+  
+      </div>
+  
+      <div class="card" id="trabalhos-container">
+        <div class='card__descricao'>
+          <div class='descricao'>
+            <h3 class='descricao__titulo'>
+              Artstech - Labclin
+            </h3>
+            <h2 class='descricao__titulo-livro'>
+              PHP, CodIgniter, Bootstrap, CSS, MySql
+            </h2>
+            <p class='descricao__texto'>
+              O projeto tinha foco em automatizar toda a clinica e dar mais autonomia para os pacientes na parte de atendimento e agendamento de consultas. 
+            </p>
+          </div>
+          <img src='./assets/img/labclin.png' alt='Simbolo do framework angular' class='descricao__imagem' width="400" height="200">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="title__habilidades">Habilidades</h2>
+  <section class="habilidades" id="habilidades">
+    <div class="lista__habilidades">
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/html-ZYS0Rs2I.png" alt="icone de html5" class="img__item">
+            <h3>HTML 5</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/css-5WRNGH9I.png" alt="icone de css" class="img__item">
+            <h3>CSS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/git.png" alt="icone de git" class="img__item">
+            <h3>Git</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/js.png" alt="icone de JavaScript" class="img__item">
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/php-1.svg" alt="icone de PHP" class="img__item">
+            <h3>PHP</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/nodejs-XLcSyKqV.png" alt="icone de Node" class="img__item">
+            <h3>Node</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/ts.png" alt="icone de TypeScript" class="img__item">
+            <h3>TypeScript</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/docker.png" alt="icone de docker" class="img__item">
+            <h3>Docker</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/postegre.png" alt="icone de Postgresql" class="img__item">
+            <h3>Postgresql</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/mysql.svg" alt="icone de MySQL" class="img__item">
+            <h3>MySql</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/laravel.svg" alt="icone de laravel" class="img__item">
+            <h3>Laravel</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/codeigniter.svg" alt="icone de codeigniter" class="img__item">
+            <h3>CodeIgniter</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/sequelizer.svg" alt="icone de sequelizer" class="img__item">
+            <h3>Sequelizer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/express.svg" alt="icone de express" class="img__item">
+            <h3>Express</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/angular.svg" alt="icone de angular" class="img__item">
+            <h3>Angular</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/react.png" alt="icone de react" class="img__item">
+            <h3>React.js</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/vue.svg" alt="icone de vue" class="img__item">
+            <h3>Vue</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/quasar.svg" alt="icone de quasar" class="img__item">
+            <h3>Quasar</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/tawilind.png" alt="icone de tailwind" class="img__item">
+            <h3>Tailwind</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/rediz.svg" alt="icone de redis" class="img__item">
+            <h3>Redis</h3>
+          </div>
+        </div>
+      </div>
+      <div class="item__habilidades">
+        <div class="item__habilidades__container">
+          <div class="item">
+            <img src="./assets/img/icons_habilidades/bullmq.png" alt="icone de bullmq" class="img__item">
+            <h3>BullMq</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="rodape">
+    <div class="links">
+      <ul class="lista-rodape">
+        <li class="lista-rodape__item">
+          <a href="https://www.instagram.com/lucas_meyble/" target="_blank" class="lista-rodape__link">
+            <img src="./assets/img/icons8-instagram.svg" alt="Logo do instagran">
+          </a>
+        </li>
+        <li class="lista-rodape__item">
+          <a href="https://www.linkedin.com/in/lucas-meyble-67b0591bb/" target="_blank" class="lista-rodape__link">
+            <img src="./assets/img/icons8-linkedin.svg" alt="Logo do Linkedin">
+          </a>
+        </li>
+        <li class="lista-rodape__item">
+          <a href="mailto:lucasmeyble@gmail.com" class="lista-rodape__link">
+            <img src="./assets/img/Email.svg" alt="Logo do Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h2 class="rodape__titulo">&#169 Copyright 2023 by Lucas Meyble</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    
+    
+    function teste(value) {
+      fetch("./assets/db/jobs.json").then((response) => {
+        response.json().then((obj) => {
+          document.getElementById('trabalhos-container').innerHTML = obj.arrayJobs[value]
+        })
+      })
+    }
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+
+</body>
+
+</html>
